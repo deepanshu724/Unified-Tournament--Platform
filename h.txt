@@ -1,0 +1,38 @@
+ <table class=" w-[22.1rem] text-black ">
+
+                <tr class="border-2">
+                    <th class="">Title</th>
+                    <td class="W-8 border-2 p-3">: </td>
+                    <td class="">Summer Battle</td>
+                </tr>
+                <tr>
+                    <th class="">Prizepool</th>
+                    <td>:</td>
+                    <td class="">20,000 INR</td>
+                </tr>
+                <tr>
+                    <th class="">Location</th>
+                    <td>:</td>
+                    <td class="">India</td>
+                </tr>
+                <tr>
+                    <th class="">Mode</th>
+                    <td>:</td>
+                    <td class="">Underdogs</td>
+                </tr>
+                <tr>
+                    <th class="">Registration Slots</th>
+                    <td>:</td>
+                    <td class="">600</td>
+                </tr>
+                <tr>
+                    <th class="">Registration Start</th>
+                    <td>:</td>
+                    <td class="">07-Mar-2024</td>
+                </tr>
+                <tr>
+                    <th class="">Registration Ends</th>
+                    <td>:</td>
+                    <td class="">18-Mar-2024</td>
+                </tr>
+             </table>

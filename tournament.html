@@ -1,0 +1,195 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .hide{
+        display: none !important ;
+    }
+    
+</style>
+</head>
+<body class="bg-[#1A1A1E] text-white ">
+    <div id="hero-section" class="size-full ">
+        <nav class="p-5 bg-[#1E1E1E] shadow md:flex md:items-center md:justify-between relative">
+            <div class="flex justify-between items-center md:w-screen ">
+                <span class="text-2xl font-medium md:text-3xl cursor-pointer ">
+                Esportz
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" class="menu"></ion-icon>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2  block close-button fixed right-0 mr-4 z-50 "  style="display: none;">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <ul class="md:flex  md:gap-6 md:text-center   md:font-semibold md:text-xl hidden cursor-pointer">
+                    <li class="gam"><a href="index.html">Home</a></li>
+                    <li class="gam"><a href="game.html">Tournaments</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <div  class=" md:space-x-4 md:mr-5  md:flex btn hidden ">
+                    <button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium " >Login </button>
+                  <a href="form1.html"><button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12   w-40 text-white md:flex gap-3 items-center text-base font-medium hidden profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 lg:p-3 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+               
+                
+            </div>
+
+            <ul id="menu"
+                class=" z-30  rounded-2xl  bg-[#1E1E1E] w-full left-0  opacity-0 top-[-400px] transition-all ease-in duration-500  flex flex-col items-center h-96 fixed font-medium">
+                <li class="mx-4 my-6  ">
+                    <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="game.html" class="text-xl hover:text-cyan-500 duration-500">Tournament</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="about.html" class="text-xl hover:text-cyan-500 duration-500">About Us</a>
+                </li>
+
+                <div id="btn" class="pt-8  mr-5 gap-4 flex flex-col item-center btn ">
+                    <button class=" bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium " >Login </button>
+                  <a href="form1.html"><button class="bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12 w-40 text-white flex gap-3 items-center text-base font-medium profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+                
+            </ul>
+        </nav>
+        <div id="#main">
+            <div class="flex justify-center  relative top-24   text-6xl font-medium ">
+                <H1> Tournaments</H1>
+            </div>
+            <div class=" flex justify-center  relative top-32 size-full h-auto  ">
+                <input type="search" name="" placeholder="Search for tournament..." class=" w-80 xl:w-96 h-11 rounded-xl bg-[#1E1E1E] pl-4 pr-4"id="search-game">
+            </div>
+            <div class="tournament flex justify-center relative top-48 flex-wrap gap-4 md:flex-wrap lg:gap-6 lg:w-full  lg:flex-row lg:flex-wrap ">            
+                <div id="card1" class="bg-[#2d2d2d] h-[27.06rem] w-72 rounded-lg card ">
+                    <img src="tourna1.jpg" alt="" class="h-72 rounded-t-lg size-full object-fill">
+                    <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+                    <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+                        <img src="upt.jpg" alt="">
+                        <h3 class="text-nowrap pl-3">Valorant SA</h3>
+                        <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+                    </div>
+                    <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+                        <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+                        <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+                    </div>
+                </div>
+                <div id="card2" class="bg-[#2d2d2d] h-[27.06rem] w-72 rounded-lg card ">
+                    <img src="tourna1.jpg" alt="" class="h-72 rounded-t-lg size-full object-fill">
+                    <h2 class="pt-4 pl-2 text-base font-normal md:text">zudio</h2>
+                    <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+                        <img src="upt.jpg" alt="">
+                        <h3 class="text-nowrap pl-3">Valorant SA</h3>
+                        <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+                    </div>
+                    <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+                        <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+                        <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+                    </div>
+                </div>
+                <div id="card3" class="bg-[#2d2d2d] h-[27.06rem] w-72 rounded-lg card ">
+                    <img src="tourna1.jpg" alt="" class="h-72 rounded-t-lg size-full object-fill">
+                    <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+                    <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+                        <img src="upt.jpg" alt="">
+                        <h3 class="text-nowrap pl-3">Valorant SA</h3>
+                        <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+                    </div>
+                    <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+                        <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+                        <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+                    </div>
+                </div>
+                <div id="card4" class="bg-[#2d2d2d] h-[27.06rem] w-72 rounded-lg card ">
+                    <img src="tourna1.jpg" alt="" class="h-72 rounded-t-lg size-full object-fill">
+                    <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+                    <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+                        <img src="upt.jpg" alt="">
+                        <h3 class="text-nowrap pl-3">Valorant SA</h3>
+                        <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+                    </div>
+                    <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+                        <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+                        <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+                    </div>
+                </div>
+                <div id="card5" class="bg-[#2d2d2d] h-[27.06rem] w-72 rounded-lg card ">
+                    <img src="tourna1.jpg" alt="" class="h-72 rounded-t-lg size-full object-fill">
+                    <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+                    <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+                        <img src="upt.jpg" alt="">
+                        <h3 class="text-nowrap pl-3">Valorant SA</h3>
+                        <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+                    </div>
+                    <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+                        <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+                        <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+                    </div>
+                </div>
+                <div id="card6" class="bg-[#2d2d2d] h-[27.06rem] w-72 rounded-lg card ">
+                    <img src="tourna1.jpg" alt="" class="h-72 rounded-t-lg size-full object-fill">
+                    <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+                    <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+                        <img src="upt.jpg" alt="">
+                        <h3 class="text-nowrap pl-3">Valorant SA</h3>
+                        <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+                    </div>
+                    
+                    <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+                        <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+                        <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+                    </div>
+                </div>
+                
+            </div>
+       
+            
+            <div id="footer" class="bg-[#1E1E1E] flex flex-wrap justify-center flex-col items-center mt-16 h-40   relative top-40 mb-0 ">
+                <div id="socials" class=" flex justify-center text-xl gap-6  ">
+                    <div class=" w-8 h-8 rounded-full bg-blue-600 items-center flex justify-center"><i class="ri-facebook-line"></i></div>
+                    <div  class=" w-8 h-8 rounded-full bg-gradient-to-r from-pink-600 to-amber-500 items-center flex justify-center"><i class="ri-instagram-line"></i></div>
+                    <div  class=" w-8 h-8 rounded-full bg-black items-center flex justify-center"><i class="ri-twitter-x-line"></i></div>
+                    <div  class=" w-8 h-8 rounded-full bg-[#007AB5] items-center flex justify-center"><i class="ri-linkedin-line"></i></div>
+                </div>
+                <div class="relative top-8 text-lg font-medium flex flex-row  gap-4  xl:top-8 xl:gap-4 xl:text-xl">
+                    <h3><a href="index.html">Home</a></h3>
+                    <h3 class="gam"><a href="game.html">Tournaments</a></h3>
+                    <h3> <a href="about.html">About Us</a></h3>
+                </div>
+             </div>
+             </div>
+             
+             <div class="footer-bottom h-12 bg-[#1E1E1E] flex   items-end justify-center font-semibold  relative top-40">
+                <hr class="bg-white">
+                &copy; 2024 Esportz. All rights reserved.
+            </div>
+
+        </div>
+   <script src="tournaments.js"></script>
+	<script src="profile.js"></script>
+    </body>
+</html>

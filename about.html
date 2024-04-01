@@ -1,0 +1,245 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .hide{
+        display: none !important ;
+    }
+    
+</style>
+</head>
+<body class="bg-[#1A1A1E] text-white ">
+    <div id="hero-section" class="size-full ">
+        <nav class="p-5 bg-[#1E1E1E] shadow md:flex md:items-center md:justify-between relative">
+            <div class="flex justify-between items-center md:w-screen ">
+                <span class="text-2xl font-medium md:text-3xl cursor-pointer ">
+                Esportz
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" class="menu"></ion-icon>
+                </span>
+                
+                <span class="text-3xl cursor-pointer mx-2  block close-button fixed right-0 mr-4 z-50 "  style="display: none;">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <ul class="md:flex  md:gap-6 md:text-center   md:font-semibold md:text-xl hidden cursor-pointer">
+                    <li class="gam"><a href="index.html">Home</a></li>
+                    <li class="gam"><a href="game.html">Tournaments</a></li>
+                    <li> <a href="about.html">About Us</a> </li>
+                </ul>
+                <div  class=" md:space-x-4 md:mr-5  md:flex btn hidden ">
+                    <button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium " >Login </button>
+                  <a href="form1.html"><button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12   w-40 text-white md:flex gap-3 items-center text-base font-medium hidden profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 lg:p-3 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+               
+                
+            </div>
+
+            <ul id="menu"
+                class=" z-30  rounded-2xl  bg-[#1E1E1E] w-full left-0  opacity-0 top-[-400px] transition-all ease-in duration-500  flex flex-col items-center h-96 fixed font-medium">
+                <li class="mx-4 my-6  ">
+                    <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="game.html" class="text-xl hover:text-cyan-500 duration-500">Tournament</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="about.html" class="text-xl hover:text-cyan-500 duration-500">About Us</a>
+                </li>
+
+                <div id="btn" class="pt-8  mr-5 gap-4 flex flex-col item-center btn ">
+                    <button class=" bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium " >Login </button>
+                  <a href="form1.html"><button class="bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12 w-40 text-white flex gap-3 items-center text-base font-medium profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+                
+            </ul>
+        </nav>
+        <div id="main" class="w-full object-cover" style="background-image: url(https://img.freepik.com/free-photo/modern-futuristic-sci-fi-background_35913-2152.jpg?w=1060&t=st=1711266632~exp=1711267232~hmac=6438fa3952a067ea858a5c8e39c232f60a21ba09659309bb0ebdabe85c3b6440); background-size: cover; background-position: center;">
+            <div class="flex justify-center items-center h-[92.1vh] flex-col text-nowrap  backdrop-blur-sm">
+                <h3 class=" md:text-3xl  text-xl text-wrap font-extrabold">Our objective is to ensure that esports</h3>
+                <h3 class="text-2xl font-bold"> is easily accessible to</h3>
+                <h3 class="text-xl font-semibold">everyone.</h3>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6 m-16  relative ">
+         <div class="flex flex-col gap-6 mt-16  md:w-[41rem]">
+            <div class=" text-3xl font-bold">
+                <h1>Our Story </h1>
+            </div>
+            <div class="font-bold text-2xl">
+                <h1>What we do </h1>
+            </div>
+            <div class="text-md font-normal">
+                <h2>  We're working on a platform that offers online esports infrastructure to all the key stakeholders in the industry including players, organizers and game developers.</h2>
+
+            </div>
+            <div class="font-bold text-2xl">
+                <h1>Who we are</h1>
+            </div>
+            <div class="text-md font-normal" >
+                <h2> We're a team of gamers, nerds, techies, athletes, creators and dreamers. A team made up of people who are the best at what they do. We have worked at companies like Google, Microsoft, ESL, Twitch, and Spotify. Some of us have been professional esports players but we all share a love for gaming. By merging both world-class technical and business expertise with years of esports experience, we've created a platform that enables the full potential of esports and competitive gaming.</h2>
+
+            </div>
+        </div>
+            <div class=" lg:flex lg:absolute lg:w-96 lg:h-[40rem] lg:right-0 lg:-top-14 hidden ">
+                <img src="https://www.challengermode.com/_arenablob/20240323.5/assets/reyna_artwork-ozqaWQ9n.png" alt="">
+            </div> 
+        </div>
+
+        <div class=" bg-[#0e0e0e] w-full gap-24  mt-56 flex flex-wrap justify-center items-center md:p-20">
+            <div class=" flex flex-wrap flex-col  items-center pt-4 lg:pt-0 ">
+                <div class=" text-[2.8rem] flex flex-col font-bold ">
+                   <h1>2014</h1>
+                </div>
+                <div class="text-lg font-medium  ">
+                <h4 >Founded</h4>
+                </div>
+            </div> 
+            <div class=" flex flex-wrap flex-col  items-center pt-4 lg:pt-0">
+                <div class=" text-[2.8rem] flex flex-col font-bold ">
+                    <h1>500+</h1>
+                 </div>
+                 <div class="text-lg font-medium  ">
+                 <h4 >Tournaments Added</h4>
+                 </div>
+            </div> 
+            <div class=" flex flex-wrap flex-col  items-center pt-4 lg:pt-0 pb-4">
+                <div class=" text-[2.8rem] flex flex-col font-bold ">
+                    <h1>15000</h1>
+                 </div>
+                 <div class="text-lg font-medium  ">
+                 <h4 >Members</h4>
+                 </div>
+            </div> 
+
+            <div class=" flex flex-wrap flex-col  items-center pt-4 lg:pt-0 pb-4">
+                <div class=" text-[2.8rem] flex flex-col font-bold ">
+                    <h1>$28M</h1>
+                 </div>
+                 <div class="text-lg font-medium  ">
+                 <h4 >Funding</h4>
+                 </div>
+            </div> 
+        </div>
+        <div class="text-3xl font-bold relative text-center mt-10">
+            <h1>Contact</h1>
+         </div>
+        <div class=" flex justify-center items-center">
+          <div class="flex flex-wrap gap-8 justify-center items-center pt-24 xl:w-[74rem]">
+            <div class=" ">
+                <div class="bg-[#2D2D2D] h- rounded-xl w- p-12 ">
+                 <div class="pb-4">
+                    <i class="  ri-map-2-line text-[2.5rem]"></i>
+                 </div>
+                    <div >
+                        <h1 class="text-xl pb-2 font-semibold">Stockholm, Sweden</h1>
+                    <h3 class="font-medium">Södermalmsallén 36, 118 28 Stockholm, Sweden
+                    </h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex ">
+                <div class="bg-[#2D2D2D] h- rounded-xl w- p-12 ">
+                 <div class="pb-4">
+                    <i class="  ri-map-2-line text-[2.5rem]"></i>
+                 </div>
+                    <div >
+                        <h1 class="text-xl pb-2 font-semibold">Palo Alto, United States</h1>
+                    <h3 class="font-medium">470 Ramona St, Palo Alto, CA 94301, United States
+                    </h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex ">
+                <div class="bg-[#2D2D2D] h- rounded-xl w- p-12 ">
+                 <div class="pb-4">
+                    <i class="ri-donut-chart-line text-[2.5rem]"></i>
+                 </div>
+                    <div >
+                        <h1 class="text-xl pb-2 font-semibold">Support</h1>
+                    <h3 class="font-medium">support@esportz.com
+                    </h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex ">
+                <div class="bg-[#2D2D2D] h- rounded-xl w- p-12 ">
+                 <div class="pb-4">
+                    <i class="ri-mail-fill text-[2.5rem]"></i>
+                 </div>
+                    <div >
+                        <h1 class="text-xl pb-2 font-semibold">Inquiries</h1>
+                    <h3 class="font-medium">team@esportz.com
+                    </h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex   ">
+                <div class="bg-[#2D2D2D] h- rounded-xl p-12 ">
+                 <div class="pb-4">
+                    <i class="ri-phone-fill text-[2.5rem]"></i>
+                 </div>
+                    <div >
+                        <h1 class="text-xl pb-2 font-semibold">Phone</h1>
+                    <h3 class="font-medium">+9123456654
+                    </h3>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+        </div>
+        <div id="footer" class="bg-[#1E1E1E] flex flex-wrap justify-center flex-col items-center mt-20 h-40 ">
+            <div id="socials" class=" flex justify-center text-xl gap-6  ">
+                <div class=" w-8 h-8 rounded-full bg-blue-600 items-center flex justify-center"><i class="ri-facebook-line"></i></div>
+                <div  class=" w-8 h-8 rounded-full bg-gradient-to-r from-pink-600 to-amber-500 items-center flex justify-center"><i class="ri-instagram-line"></i></div>
+                <div  class=" w-8 h-8 rounded-full bg-black items-center flex justify-center"><i class="ri-twitter-x-line"></i></div>
+                <div  class=" w-8 h-8 rounded-full bg-[#007AB5] items-center flex justify-center"><i class="ri-linkedin-line"></i></div>
+            </div>
+            <div class="relative top-8 text-lg font-medium flex flex-row  gap-4  xl:top-8 xl:gap-4 xl:text-xl">
+                <h3><a href="index.html">Home</a></h3>
+                <h3 class="gam"><a href="game.html">Tournaments</a></h3>
+                <h3> <a href="about.html">About Us</a> </h3>
+            </div>
+         </div>
+         
+         <div class="footer-bottom h-12 bg-[#1E1E1E] flex   items-end justify-center font-semibold">
+            <hr class="bg-white+">
+            &copy; 2024 Esportz. All rights reserved.
+        </div>
+    </div>
+          
+   
+      
+ <script src="about.js"></script>
+ <script src="profile.js"></script>
+</body>
+</html>

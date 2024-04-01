@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .hide{
+        display: none !important;
+    }
+    
+</style>
+</head>
+<body class="bg-[#1A1A1E] text-white ">
+    <div id="hero-section" class="size-full ">
+        
+        <nav class="p-5 bg-[#1E1E1E] shadow md:flex md:items-center md:justify-between relative">
+            <div class="flex justify-between items-center md:w-screen ">
+                <span class="text-2xl font-medium md:text-3xl cursor-pointer animation ">
+                Esportz
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block animation">
+                    <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2  block close-button fixed right-0 mr-4 z-50 md:hidden animation " onclick="closeMenu()" style="display: none;">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <ul class="md:flex  md:gap-6 md:text-center   md:font-semibold md:text-xl hidden cursor-pointer">
+                    <li class="gam animation "><a href="index.html"  class="hover:text-cyan-500 duration-500">Home</a></li>
+                    <li class="gam animation"><a href="game.html" class="hover:text-cyan-500 duration-500">Tournaments</a></li>
+                    <li class="animation "><a href="about.html" class="hover:text-cyan-500 duration-500">About Us</a></li>
+                </ul>
+                <div  class=" md:space-x-4 md:mr-5  md:flex btn hidden ">
+                    <button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium animation " >Login </button>
+                  <a href="form1.html"><button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium animation" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12   w-40 text-white md:flex gap-3 items-center text-base font-medium hidden profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 lg:p-3 text-base lg:text-lg flex items-center animation "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext animation">Deepanshu</h3>
+                </div>
+            </div>
+
+            <ul id="menu"
+                class=" z-30  rounded-2xl  bg-[#1E1E1E] w-full left-0  opacity-0 top-[-400px] transition-all ease-in duration-500  flex flex-col items-center h-96 fixed font-medium md:hidden">
+                <li class="mx-4 my-6  ">
+                    <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="game.html" class="text-xl hover:text-cyan-500 duration-500">Tournament</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="about.html" class="text-xl hover:text-cyan-500 duration-500">About Us</a>
+                </li>
+
+                <div id="btn" class="pt-8  mr-5 gap-4 flex flex-col item-center btn ">
+                    <button class=" bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium " >Login </button>
+                  <a href="form1.html"><button class="bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12 w-40 text-white flex gap-3 items-center text-base font-medium profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+             
+                
+            </ul>
+        </nav>
+
+        <div id="img" class=" h-auto">
+            <div class="h-[25rem]  size-full  text-white    rounded-b-lg bg-cover cursor-default  " style="background-image: url('img11.jpg')">
+                    <h2 class="pt-32 pl-4 text-xl font-bold text-center md:text-2xl xl:text-3xl ">Stay Updated with <span class="text-[#0085FF]"> Esportz</span></h2>
+                    <h6 class="text-center md:text-lg xl:text-xl xl:pt-2 ">Join the Community of Esports Enthusiasts!</h6>
+                    <div id="bar" class="h-20 w-[20.8rem] gap-3 bg-[#2D2D2D] z-20 bottom-10 relative text-center left-1/2 transform -translate-x-1/2 rounded-full top-[10.9rem] flex justify-center text-sm pt-4 font-semibold sm:w-[30rem] sm:text-base sm:gap-7 xl:top-[10.3rem] xl:w-[45rem]   lg:w-[40rem]  lg:pt-2 lg:text-lg xl:text-xl xl:pt-3 anima">
+                        <h3 ><a href="game.html ">Explore the World of Esports</a></h3>
+                            <h3><a href="game.html"> Find Tournaments</a></h3>
+                            <h3><a href="game.html">Explore Games</a></h3>
+                            <a href="game.html">  <button class="bg-[#1A1A1E] h-8 w-11 rounded-full mt-1 mr-1 sm:w-12 sm:h-9 sm:mr-3 sm:mt-1 lg:w-13 lg:h-11 lg:mt-[0.5rem] xl:w-16 xl:h-14 xl:-mt-0 xl:mr-4 card1"  > <i class="ri-arrow-right-line "></i></button></a>
+                    </div>
+    
+            </div>
+           
+        </div>
+        <div id="read" class="text-white flex flex-col left-1/2 bottom-10 transform -translate-x-1/2 absolute font-medium text-xl icon">
+            <h3 class="">Know more</h3>
+            <i class=" ml-11  ri-arrow-down-double-fill"></i>
+        </div>    
+    </div>
+</div>
+<div id="second-page" class=" flex justify-center pt-12     gap-8   relative left-1/2 transform -translate-x-1/2  text-white  flex-wrap flex-row  ">
+    <div class="bg-[#2d2d2d] h-64 w-72 rounded-lg mx-auto sm:w-96 sm:h-72   sm:flex sm:justify-center sm:flex-col xl:h-[19rem] ">
+        <div class="h-60 w-8 pt-4 pl-2"><i class="ri-gamepad-line text-3xl "></i>
+        </div>
+        <h2 class="  w-[13rem] relative left-16 bottom-[14rem] sm:bottom-12  text-lg font-medium sm:text-xl sm:w-[16rem] xl:text-2xl xl:w-[18rem] xl:-top-9">Community Tournaments</h2>
+        <p class="w-[14rem] relative left-14 text-sm bottom-[13rem] sm:bottom-[2rem]  sm:text-base sm:w-[18rem] xl:w-[20rem] xl:text-lg xl:-top-4">Dive into our vibrant gaming community and join tournaments suited to your style. Whether you're a competitive player or seeking like-minded gamers, our platform offers diverse events. Explore new gaming communities, compete, and elevate your gaming experience with us.</p>
+    </div> 
+    <div class="bg-[#2d2d2d] h-64 w-72 rounded-lg mx-auto sm:w-96 sm:h-72   sm:flex sm:justify-center sm:flex-col xl:h-[19rem] ">
+        <div class="h-60 w-8 pt-4 pl-2"><i class="ri-gamepad-line text-3xl "></i>
+        </div>
+        <h2 class="  w-[13rem] relative left-16 bottom-[14rem] sm:bottom-12  text-lg font-medium sm:text-xl sm:w-[16rem] xl:text-2xl xl:w-[20rem] xl:-top-9">Dynamic Experience</h2>
+        <p class="w-[14rem] relative left-14 text-sm bottom-[13rem] sm:bottom-[2rem]  sm:text-base sm:w-[18rem] xl:w-[20rem] xl:text-lg xl:-top-4 ">Explore gaming excitement with our dynamic platform. Stay updated on trends, patches, and new content across games. Whether competitive or casual, our platform offers immersive experiences tailored to you. Dive into endless possibilities and find your next gaming adventure with us.</p>
+    </div>  
+    <div class="bg-[#2d2d2d] h-64 w-72 rounded-lg mx-auto sm:w-96 sm:h-72   sm:flex sm:justify-center sm:flex-col xl:h-[19rem] ">
+        <div class="h-60 w-8 pt-4 pl-2"><i class="ri-gamepad-line text-3xl "></i>
+        </div>
+        <h2 class="  w-[13rem] relative left-16 bottom-[14rem] sm:bottom-12  text-lg font-medium sm:text-xl sm:w-[16rem] xl:text-2xl xl:w-[18rem] xl:-top-9">Community Tournaments</h2>
+        <p class="w-[14rem] relative left-14 text-sm bottom-[13rem] sm:bottom-[2rem]  sm:text-base sm:w-[18rem] xl:w-[20rem] xl:text-lg xl:-top-4 ">Dive into our vibrant gaming community and join tournaments suited to your style. Whether you're a competitive player or seeking like-minded gamers, our platform offers diverse events. Explore new gaming communities, compete, and elevate your gaming experience with us.</p>
+    </div>  
+   
+ </div>
+ <div id="third" class="pt-40">
+    <div id="explore" class="text-white flex justify-center flex-col  cursor-pointer">
+       <h1 class="m-auto text-xl font-medium md:text-2xl">Explore Ongoing Tournaments</h1>
+       <hr class="w-80 h-1 mt-4 border-10  m-auto md:w-96">
+    </div>
+
+    <div id="tournament-cards" class="flex flex-wrap justify-center gap-8 pt-8 ">
+       <div id="card1" class="bg-[#2d2d2d] h-96 w-72 rounded-lg  cursor-pointer card1 ">
+           <img src="tourna1.jpg" alt="" class="h-60 rounded-t-lg size-full object-fill">
+           <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+           <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+               <img src="upt.jpg" alt="">
+               <h3 class="text-nowrap pl-3">Valorant SA</h3>
+               <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+           </div>
+           <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+               <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+               <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+           </div>
+       </div>
+       <div id="card1" class="bg-[#2d2d2d] h-96 w-72 rounded-lg  cursor-pointer card1">
+           <img src="tourna1.jpg" alt="" class="h-60 rounded-t-lg size-full object-fill">
+           <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+           <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+               <img src="upt.jpg" alt="">
+               <h3 class="text-nowrap pl-3">Valorant SA</h3>
+               <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+           </div>
+           <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+               <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+               <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+           </div>
+       </div>
+       
+       <div id="card1" class="bg-[#2d2d2d] h-96 w-72 rounded-lg  cursor-pointer card1">
+           <img src="tourna1.jpg" alt="" class="h-60 rounded-t-lg size-full object-fill">
+           <h2 class="pt-4 pl-2 text-base font-normal md:text">Valorant challenger SA</h2>
+           <div class="h-14 w-14 pt-7 pl-2 rounded-lg flex">
+               <img src="upt.jpg" alt="">
+               <h3 class="text-nowrap pl-3">Valorant SA</h3>
+               <h3 class="relative left-20 text-nowrap w-auto">2000 Slots</h3>
+           </div>
+           <div class="flex justify-between relative top-6 bg-[#69B4FF] rounded-lg">
+               <h3 class="pl-2 rounded-3xl w-16 font-normal">24 Jan</h3>
+               <h3 class="text-center rounded-3xl w-16 font-normal">24 Feb</h3>
+           </div>
+       </div>
+   </div>
+   <div class="size-full h-10 flex justify-center">
+       <a href="game.html"> <button class="relative bg-[#0085FF] h-8 rounded-2xl w-24 text-base mt-5 hover:bg-white hover:text-black hover:border-blue-500 hover:border-2 transform transition-all ease-in-out duration-700">View more</button></a>
+   </div>
+   </div>
+   <div id="explore" class="text-white flex justify-center flex-col pt-16">
+       <h1 class="m-auto text-xl font-medium md:text-2xl">Explore Games</h1>
+       <hr class="w-80 h-1 mt-4 border-10  m-auto md:w-96">
+    </div>
+<div id="games" class="flex justify-center flex-wrap pt-10   gap-14 ">
+       <div id="game1" class="bg-[#2d2d2d] h-40 w-72 rounded-lg games  cursor-pointer card1">
+           <img src="valo.jpg " class="object-fill rounded-lg z-0" alt="">
+           <button class="relative bg-[#2d2d2d] text-center font-medium h-8 rounded-2xl w-24 text-base z-10 bottom-12 left-1 games"> BGMI</button>
+       </div>
+       <div id="game2" class="bg-[#2d2d2d] h-40 w-72 rounded-lg games  cursor-pointer card1">
+           <img src="valo.jpg " class="object-fill rounded-lg z-0" alt="">
+           <button class="relative bg-[#2d2d2d] h-8 rounded-2xl w-24 text-base z-10 bottom-12 left-1 text-center font-medium games"> Free Fire</button>
+       </div> 
+       <div id="game3" class="bg-[#2d2d2d] h-40 w-72 rounded-lg games cursor-pointer card1">
+           <img src="valo.jpg " class="object-fill rounded-lg z-0" alt="">
+           <button class="relative bg-[#2d2d2d] h-8 rounded-2xl w-24 text-base z-10 bottom-12 left-1 text-center font-medium games"> Valorant</button>
+       </div>
+       
+   </div>
+   <div class="size-full h-10 flex justify-center relative top-16 ">
+       <a href="game.html">  <button class="relative bg-[#0085FF] h-8 rounded-2xl w-24 text-base">View more</button></a>
+   </div>
+</div>
+<div id="footer" class="bg-[#1E1E1E] flex flex-wrap justify-center flex-col items-center mt-20 h-40 ">
+    <div id="socials" class=" flex justify-center text-xl gap-6  ">
+        <div class=" w-8 h-8 rounded-full bg-blue-600 items-center flex justify-center"><i class="ri-facebook-line"></i></div>
+        <div  class=" w-8 h-8 rounded-full bg-gradient-to-r from-pink-600 to-amber-500 items-center flex justify-center"><i class="ri-instagram-line"></i></div>
+        <div  class=" w-8 h-8 rounded-full bg-black items-center flex justify-center"><i class="ri-twitter-x-line"></i></div>
+        <div  class=" w-8 h-8 rounded-full bg-[#007AB5] items-center flex justify-center"><i class="ri-linkedin-line"></i></div>
+    </div>
+    <div class="relative top-8 text-lg font-medium flex flex-row  gap-4  xl:top-8 xl:gap-4 xl:text-xl">
+        <h3><a href="index.html">Home</a></h3>
+        <h3 class="gam"><a href="game.html">Tournaments</a></h3>
+        <h3> <a href="about.html">About Us</a></h3>
+    </div>
+ </div>
+ 
+ <div class="footer-bottom h-12 bg-[#1E1E1E] flex   items-end justify-center font-semibold">
+    <hr class="bg-white+">
+    &copy; 2024 Esportz. All rights reserved.
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+<script src="profile.js"></script>
+ </body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>    
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .hide{
+        display: none !important;
+    }
+    
+</style>
+</head>
+<body class="bg-[#1A1A1E] text-white ">
+    <div id="hero-section" class="size-full ">
+        
+        <nav class="p-5 bg-[#1E1E1E] shadow md:flex md:items-center md:justify-between relative">
+            <div class="flex justify-between items-center md:w-screen ">
+                <span class="text-2xl cursor-pointer ">
+                Esportz
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2  block close-button fixed right-0 mr-4 z-50 " onclick="closeMenu()" style="display: none;">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <ul class="md:flex  md:gap-6 md:text-center   md:font-semibold md:text-xl hidden cursor-pointer">
+                    <li class="gam"><a href="index.html">Home</a></li>
+                    <li class="gam"><a href="game.html">Tournaments</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <div  class=" md:space-x-4 md:mr-5  md:flex btn hidden ">
+                    <button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium " >Login </button>
+                  <a href="form1.html"><button class=" md:bg-[#0085FF] md:h-7 md:w-20  md:rounded-2xl md:text-base md:font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12 w-40 text-white md:flex gap-3 items-center text-base font-medium hidden profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 lg:p-3 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+            </div>
+
+            <ul id="menu"
+                class=" z-30  rounded-2xl  bg-[#1E1E1E] w-full left-0  opacity-0 top-[-400px] transition-all ease-in duration-500  flex flex-col items-center h-96 fixed font-medium">
+                <li class="mx-4 my-6 ">
+                    <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="game.html" class="text-xl hover:text-cyan-500 duration-500">Tournament</a>
+                </li>
+                <li class="mx-4 my-6 ">
+                    <a href="about.html" class="text-xl hover:text-cyan-500 duration-500">About Us</a>
+                </li>
+
+                <div id="btn" class="pt-8  mr-5 gap-4 flex flex-col item-center btn ">
+                    <button class=" bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium " >Login </button>
+                  <a href="form1.html"><button class="bg-[#0085FF] h-11   w-72  rounded-2xl text-lg font-medium" >Sign Up</button></a>  
+                </div>
+                <div  class=" h-12 w-40 text-white flex gap-3 items-center text-base font-medium profile "> 
+                    <div class="bg-blue-500 h-8 w-8 lg:w-10 lg:h-10 rounded-full p-2 text-base lg:text-lg flex items-center "><i class="ri-user-line"></i></div>
+                    <h3 class="ptext">Deepanshu</h3>
+                </div>
+            </ul>
+        </nav>
+
+        <div class=" size-full  h-[66rem] gap-24  text-white object-fill bg-cover cursor-default flex  justify-center items-center   " style="background-image: url('img11.jpg') ">
+			<form class="bg-[#1e1e1e]  rounded-2xl shadow-xl  px-8 pt-6 pb-8 mb-4 w-96 lg:w-[30rem]  text-white " action="" id="myForm">
+				<h2 class="text-2xl mb-6 text-center">Register Account</h2>
+				<div class="mb-4">
+					<label class="block text-base  font-medium mb-2 " for="username">Username <span class="text-red-800 text-base ">*</span></label>
+					<input id="username" class="bg-gray-700 appearance-none border-2 border-gray-600 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-white user check" type="text" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-base  font-medium mb-2" for="fullname">Full Name<span class="text-red-800 text-base">*</span></label>
+					<input id="fullname" class="bg-gray-700 appearance-none border-2 border-gray-600 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-white check" type="text" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-base  font-medium mb-2" for="email">E-mail Address<span class="text-red-800 text-base">*</span></label>
+					<input id="email" class="bg-gray-700 appearance-none border-2 border-gray-600 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-white check" type="email" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-base  font-medium mb-2" for="contact">Contact Number</label>
+					<input id="contact" class="bg-gray-700 appearance-none border-2 border-gray-600 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-white check" type="number" >
+				</div>
+				<div class="mb-4">
+					<label class="block text-base  font-medium mb-2" for="password">Password<span class="text-red-800 text-base">*</span></label>
+					<input id="password" class="bg-gray-700 appearance-none border-2 border-gray-600 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-white check" type="password" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-base  font-medium mb-2" for="confirm-password-again">Confirm Password</label>
+					<input id="confirm-password-again" class="bg-gray-700 appearance-none border-2 border-gray-600 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-white check" type="password" required>
+				    <h3 id="alert" class="text-red-600"> </h3>
+				</div>
+				<label class="mb-4 flex items-center">
+					<input class="mr-2" type="checkbox" required> 
+					<span>I agree with the Playtics Terms & Conditions and Privacy Policy.</span>
+				</label>
+		<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="submit" Id="submit">
+            Register
+		    	</button> 	
+				<p class="text-center mt-4 text-sm">
+					Already a member? <a class="text-blue-400 hover:text-blue-600" href="#">Login Now</a>
+				</p>
+				<p class="text-center mt-2 text-sm">
+					<a class="text-blue-400 hover:text-blue-600" href="#">Terms & Conditions</a> | <a class="text-blue-400 hover:text-blue-600" href="#">Privacy Policy</a>
+				</p>
+			</form>
+		</div>
+		<div id="footer" class="bg-[#1E1E1E] flex flex-wrap justify-center flex-col items-center  h-40 ">
+            <div id="socials" class=" flex justify-center text-xl gap-6  ">
+                <div class=" w-8 h-8 rounded-full bg-blue-600 items-center flex justify-center"><i class="ri-facebook-line"></i></div>
+                <div  class=" w-8 h-8 rounded-full bg-gradient-to-r from-pink-600 to-amber-500 items-center flex justify-center"><i class="ri-instagram-line"></i></div>
+                <div  class=" w-8 h-8 rounded-full bg-black items-center flex justify-center"><i class="ri-twitter-x-line"></i></div>
+                <div  class=" w-8 h-8 rounded-full bg-[#007AB5] items-center flex justify-center"><i class="ri-linkedin-line"></i></div>
+            </div>
+            <div class="relative top-8 text-lg font-medium flex flex-row  gap-4  xl:top-8 xl:gap-4 xl:text-xl">
+                <h3><a href="index.html">Home</a></h3>
+                <h3 class="gam"><a href="game.html">Tournaments</a></h3>
+                <h3> <a href="about.html">About Us</a></h3>
+            </div>
+         </div>
+         
+         <div class="footer-bottom h-12 bg-[#1E1E1E] flex   items-end justify-center font-semibold">
+            <hr class="bg-white+">
+            &copy; 2024 Esportz. All rights reserved.
+        </div>
+   <script src="signup.js"></script>
+   <script src="profile.js"></script>
+	
+    </body>
+
+</html>
