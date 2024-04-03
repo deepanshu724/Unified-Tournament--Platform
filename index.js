@@ -40,13 +40,13 @@ var tl=gsap.timeline()
 tl.from('.animation',{
     y:-50,
     opacity:0,
-    duration:1,
-    delay:0.5,
+    duration:0.6,
+    delay:0.2,
     stagger:0.2,
 })
 tl.from('.anima',{
     y:50,
-    delay:0.5,
+    delay:0.1,
     opacity:0,
     duration:1,
     ease: "back(5)",
@@ -76,6 +76,9 @@ card.forEach((event)=>{
         // Animate the card when the mouse leaves using GSAP
         gsap.to(event, { scale: 1, duration: 0.3 });
       });
+      event.addEventListener('click',()=>{
+        location.href='tournament_inner_page.html'
+      })
     
 })
   // Add event listener for mouseenter (hover)
